@@ -11,7 +11,7 @@ The goal of this project is to create a relaxing and visually engaging space for
 ## 🖼️ Preview
 
 <p align="center">
-  <img src="README_Assets/preview.png" width="800">
+  <img src="README_Assets/preview.jpg" width="800">
 </p>
 
 ---
