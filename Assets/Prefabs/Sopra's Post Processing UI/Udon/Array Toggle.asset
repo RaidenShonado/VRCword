@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: Array Toggle
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: d248bfbd234f97d459917435c8ad49db,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export On\r\n    .export Off\r\n    \r\n   
+    __index_0: %SystemInt32, null\r\n    __condition_0: %SystemBoolean, null\r\n   
+    __instance_1: %UnityEngineGameObject, this\r\n    __value_0: %SystemBoolean,
+    null\r\n    __instance_2: %UnityEngineGameObjectArray, null\r\n    __Int32_0:
+    %SystemInt32, null\r\n    __start_0: %SystemInt32, null\r\n    __end_0: %SystemInt32,
+    null\r\n    __step_0: %SystemInt32, null\r\n    __instance_0: %UnityEngineGameObjectArray,
+    null\r\n    __index_1: %SystemInt32, null\r\n    __condition_1: %SystemBoolean,
+    null\r\n    __instance_4: %UnityEngineGameObject, this\r\n    __value_1: %SystemBoolean,
+    null\r\n    __instance_5: %UnityEngineGameObjectArray, null\r\n    __Int32_1:
+    %SystemInt32, null\r\n    __start_1: %SystemInt32, null\r\n    __end_1: %SystemInt32,
+    null\r\n    __step_1: %SystemInt32, null\r\n    __instance_3: %UnityEngineGameObjectArray,
+    null\r\n    On: %UnityEngineGameObjectArray, null\r\n    Off: %UnityEngineGameObjectArray,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, On\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __end_0\r\n        EXTERN,
+    \"UnityEngineGameObjectArray.__get_Length__SystemInt32\"\r\n        PUSH, __start_0\r\n       
+    PUSH, __index_0\r\n        COPY\r\n        PUSH, __index_0\r\n        PUSH, __end_0\r\n       
+    PUSH, __condition_0\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x00000218\r\n        PUSH, On\r\n       
+    PUSH, __instance_2\r\n        COPY\r\n        PUSH, On\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __index_0\r\n        PUSH, __Int32_0\r\n        COPY\r\n       
+    PUSH, __instance_2\r\n        PUSH, __Int32_0\r\n        PUSH, __instance_1\r\n       
+    EXTERN, \"UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject\"\r\n       
+    PUSH, __instance_1\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, Off\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n       
+    PUSH, __end_1\r\n        EXTERN, \"UnityEngineGameObjectArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_1\r\n        PUSH, __index_1\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __end_1\r\n        PUSH, __condition_1\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_1\r\n        JUMP_IF_FALSE, 0x000001F0\r\n        PUSH, Off\r\n       
+    PUSH, __instance_5\r\n        COPY\r\n        PUSH, Off\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_1\r\n        COPY\r\n       
+    PUSH, __instance_5\r\n        PUSH, __Int32_1\r\n        PUSH, __instance_4\r\n       
+    EXTERN, \"UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject\"\r\n       
+    PUSH, __instance_4\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, __index_1\r\n        PUSH, __step_1\r\n        PUSH, __index_1\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000124\r\n        PUSH, __index_0\r\n        PUSH, __step_0\r\n       
+    PUSH, __index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000040\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Event_Interact
+      uid: 9ed4a63d-d903-4b8b-b577-7e0cc7d787f9
+      position: {x: 401.71002, y: -53.582523}
+      nodeUIDs: []
+      flowUIDs:
+      - f8a819e4-e471-42c5-8a6f-463d0e0edfe5
+      nodeValues: []
+    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+      uid: 36bab6be-6b58-487d-814a-2493e5a23a03
+      position: {x: 1191.5408, y: -53.479115}
+      nodeUIDs:
+      - ddbcea05-aae0-46a6-803f-c6db9424f681|0
+      - 
+      flowUIDs:
+      - 279fe3e6-049a-40b9-8d9c-0acba199fcde
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+    - fullName: Variable_UnityEngineGameObjectArray
+      uid: cdf64199-587b-4aeb-9319-4c9c3bb75ab8
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|On
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 23e05ab8-c94d-41b5-9842-87f4fa017788
+      position: {x: 369.334, y: 170.00003}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|cdf64199-587b-4aeb-9319-4c9c3bb75ab8
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: For
+      uid: f8a819e4-e471-42c5-8a6f-463d0e0edfe5
+      position: {x: 744.84, y: -53.967518}
+      nodeUIDs:
+      - 
+      - 8e6555e9-3b41-46a4-bfa2-cb4b40566c03|0
+      - 
+      flowUIDs:
+      - 36bab6be-6b58-487d-814a-2493e5a23a03
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+    - fullName: UnityEngineGameObjectArray.__get_Length__SystemInt32
+      uid: 8e6555e9-3b41-46a4-bfa2-cb4b40566c03
+      position: {x: 570.85486, y: 70.52088}
+      nodeUIDs:
+      - 23e05ab8-c94d-41b5-9842-87f4fa017788|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject
+      uid: ddbcea05-aae0-46a6-803f-c6db9424f681
+      position: {x: 978.99994, y: 169.48111}
+      nodeUIDs:
+      - 23e05ab8-c94d-41b5-9842-87f4fa017788|0
+      - f8a819e4-e471-42c5-8a6f-463d0e0edfe5|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: Variable_UnityEngineGameObjectArray
+      uid: 4428ef24-677b-4dd4-835c-990318c3e197
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Off
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: For
+      uid: 279fe3e6-049a-40b9-8d9c-0acba199fcde
+      position: {x: 1642.9998, y: -56.045467}
+      nodeUIDs:
+      - 
+      - 3e46d3b2-657e-4a2b-9864-a94606639760
+      - 
+      flowUIDs:
+      - b1012aab-75b3-4ac0-8fb2-d6490e219c7e
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+    - fullName: UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject
+      uid: c25d33bd-0da5-47fa-afee-ab2ec1f352d2
+      position: {x: 1871.0225, y: 168}
+      nodeUIDs:
+      - eaef9728-e79b-4f5c-95a5-6cde97823ae7|0
+      - 279fe3e6-049a-40b9-8d9c-0acba199fcde
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineGameObjectArray.__get_Length__SystemInt32
+      uid: 3e46d3b2-657e-4a2b-9864-a94606639760
+      position: {x: 1467.0756, y: 114.08551}
+      nodeUIDs:
+      - eaef9728-e79b-4f5c-95a5-6cde97823ae7|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+      uid: b1012aab-75b3-4ac0-8fb2-d6490e219c7e
+      position: {x: 2074.8635, y: -57.999985}
+      nodeUIDs:
+      - c25d33bd-0da5-47fa-afee-ab2ec1f352d2
+      - 
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Get_Variable
+      uid: eaef9728-e79b-4f5c-95a5-6cde97823ae7
+      position: {x: 1260.2505, y: 170.70976}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4428ef24-677b-4dd4-835c-990318c3e197
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData:
+  - type: 5
+    uid: 994c8bd6-2601-4c7a-8bbb-c532daff8424
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":223.0,"height":233.0}}'
+  - type: 4
+    uid: c4a05e07-84fc-4fe2-afc6-afab57e57aaa
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":20.0,"y":32.0,"width":200.0,"height":100.0}}'
+  version: 1.0.0
+  showAssembly: 0

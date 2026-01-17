@@ -1,0 +1,75 @@
+{
+  "dependencies": {
+    "com.cyan.cyantrigger": {
+      "version": "0.4.2"
+    },
+    "com.vrchat.worlds": {
+      "version": "3.8.0"
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29"
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.2.1"
+    },
+    "com.llealloo.audiolink": {
+      "version": "2.1.0"
+    },
+    "idv.jlchntoz.vvmw": {
+      "version": "1.4.4"
+    },
+    "xyz.drblackrat.pictureloader": {
+      "version": "3.1.1"
+    }
+  },
+  "locked": {
+    "com.cyan.cyantrigger": {
+      "version": "4.3.3",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.1.x"
+      }
+    },
+    "com.vrchat.worlds": {
+      "version": "3.8.0",
+      "dependencies": {
+        "com.vrchat.base": "3.8.0"
+      }
+    },
+    "com.vrchat.base": {
+      "version": "3.8.0",
+      "dependencies": {}
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29",
+      "dependencies": {}
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.2.1",
+      "dependencies": {}
+    },
+    "com.llealloo.audiolink": {
+      "version": "2.1.0",
+      "dependencies": {}
+    },
+    "idv.jlchntoz.vvmw": {
+      "version": "1.4.4",
+      "dependencies": {
+        "com.vrchat.core.vpm-resolver": "0.x.x",
+        "com.vrchat.worlds": "3.x.x",
+        "idv.jlchntoz.vrcw-foundation": "0.0.x >=0.0.25"
+      }
+    },
+    "idv.jlchntoz.vrcw-foundation": {
+      "version": "0.0.29",
+      "dependencies": {
+        "com.vrchat.worlds": "3.x.x"
+      }
+    },
+    "xyz.drblackrat.pictureloader": {
+      "version": "3.1.1",
+      "dependencies": {
+        "com.vrchat.worlds": ">=3.7.4 <4.0.0"
+      }
+    }
+  }
+}
